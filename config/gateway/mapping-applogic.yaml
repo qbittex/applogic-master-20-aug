@@ -1,0 +1,8 @@
+---
+apiVersion: ambassador/v1
+kind: Mapping
+name: applogic_mapping
+host: www.app.local:8080
+prefix: /api/v2/applogic
+rewrite: /api
+service: applogic:3000
